@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package paquete1;
-
 /**
  *
  * @author reroes
@@ -23,7 +22,9 @@ public class Ejecutor {
         
         persona1.establecerBarrio(barrio2);
         
-        System.out.printf("El barrio de la persona es: %s\n",
-                persona1.obtenerBarrio().obtenerNombre());
+        System.out.printf("La persona con los datos: %s(%s);\n pertenece al "
+                + "barrio: %s\n",
+                persona1.obtenerBarrio().obtenerNombre(),
+                persona1.obtenerNombre(),persona1.obtenerCedula());
     }
 }
